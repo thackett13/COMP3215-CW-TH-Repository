@@ -88,6 +88,6 @@ int GetPrime(int s){
 	return IsPrimes[s];
 			
 } 
-
+//Testing
 
 //File handling https://www.tutorialspoint.com/cprogramming/c_file_io.htm
