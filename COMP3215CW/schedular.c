@@ -61,7 +61,7 @@ if( SchedCheck > 1){
 	//Do algorithm
 	printf("Algorithmoid");
 	//Find schedule time:
-	int n = 5;
+	int n = 6;
 	int out; 
 	out = GetPrime(n); 
 	printf("Is prime: %d",out);
@@ -77,7 +77,7 @@ int GetPrime(int s){
 	while(count < n){
 		max = count/2;	
 		for(i = 2; i<= max; i++){
-			if(i%count == 0){
+			if(count%i == 0){
 				i = max+1;
 			}else{
 				IsPrimes[count] = 1;
@@ -85,6 +85,7 @@ int GetPrime(int s){
 		}
 		count = count + 1;
 	}
+	printf("%d",s);
 	return IsPrimes[s];
 			
 } 
