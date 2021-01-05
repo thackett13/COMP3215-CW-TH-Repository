@@ -201,12 +201,81 @@ int main()
 
 	count = count +1;
 	}
+	printf("\n\n\n\n\n %d Missed Deadline count",missedCount);
 	//RMS Schedular:
 		}
 	printf("\n\n\n\n\n\n-------------------------------------------------- \n \n \n \n \n Beginning RMS Schedular: \n\n\n\n\n");
 	//RMS is a schedular which operates by performing the task with the smallest period first. 
+	count = 0;
+	int lowest = 0;
+	int check = 0;
+	int DynamicDeadline[100][3];
+	check = TaskArr[0][1]*TaskArr[1][1];
+	while(count < n){
+		DynamicDeadline[count][0] = TaskArr[count][0];
+		DynamicDeadline[count][1] = TaskArr[count][1];
+		DynamicDeadline[count][2] = 1;
+		printf(" Check:%d ", DynamicDeadline[count][1]);
+		count = count + 1;
+	}
 	
-	}	
+	count = 0;
+	lowest = 0;
+	for(int i =0; i<n;i++){
+			if(DynamicDeadline[i][1] < DynamicDeadline[lowest][1]){
+				lowest = i;
+				printf("Check i =%d",DynamicDeadline[lowest][1]);
+			}
+	}
+	int TaskExecuted = lowest;
+	int f = 0;
+	int rem = 0;
+	while(count < check){
+		
+		if((count%DynamicDeadline[lowest][1] == 0)){
+			printf("HERE");
+			TaskExecuted = lowest;
+			DynamicDeadline[0][0] = TaskArr[0][0];
+			DynamicDeadline[0][1] = TaskArr[0][1];
+			
+		}
+		//Sets lowest priority task to execute
+		
+		printf("%d: Task executing %d\n",count,TaskExecuted);
+		DynamicDeadline[TaskExecuted][0] = DynamicDeadline[TaskExecuted][0] - 1;
+		if(DynamicDeadline[TaskExecuted][0] == 0 && DynamicDeadline[TaskExecuted][1] > 0){
+			printf("%d Task %d Completed \n",count,TaskExecuted);
+			DynamicDeadline[TaskExecuted][1] = 100;
+			DynamicDeadline[TaskExecuted][2] = DynamicDeadline[TaskExecuted][2] + 1;
+			for(int i =0; i<n;i++){
+				
+				if(DynamicDeadline[i][0] != 0){
+					if(DynamicDeadline[i][1] < DynamicDeadline[f][1]){
+						f = i;
+						printf("HERE Bigman");
+					}
+				}	
+			}
+			DynamicDeadline[TaskExecuted][0] = TaskArr[TaskExecuted][0];
+			DynamicDeadline[TaskExecuted][1] = TaskArr[TaskExecuted][1];
+			TaskExecuted = f;
+		}
+		for(int i =0; i<n;i++){
+					if(count/(DynamicDeadline[i][2]*DynamicDeadline[i][1]) == 1){
+						printf("Deadline for task %d missed\n",i);
+						DynamicDeadline[i][2] = DynamicDeadline[i][2] + 1; 
+					}
+				}	
+		
+		count = count + 1;	
+		}
+		
+	
+	}
+	
+	
+	
+	
 
 
 int GetPrime(int s){
