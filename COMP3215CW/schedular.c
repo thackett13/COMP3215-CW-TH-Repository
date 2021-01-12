@@ -1,9 +1,13 @@
 //EDF and RMS schedular Thomas Hackett tph1g17@soton.ac.uk
 
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <graphics.h>
+
 int GetPrime(int s);
+void DisplayGfx();
  
 int main()
 {
@@ -272,12 +276,6 @@ int main()
 		
 	
 	}
-	
-	
-	
-	
-
-
 int GetPrime(int s){
 	int count = 2;
 	int max = 0;
@@ -311,6 +309,15 @@ int GetPrime(int s){
 	return IsPrimes[s];
 	//Prime number help: https://www.educba.com/prime-numbers-in-c/ 		
 } 
+
+void DisplayGfx(){
+	initwindow(400, 300, "First Sample");
+	circle(100,50,40);
+}
+
+
 //Testing
 
 //File handling https://www.tutorialspoint.com/cprogramming/c_file_io.htm
+
+
