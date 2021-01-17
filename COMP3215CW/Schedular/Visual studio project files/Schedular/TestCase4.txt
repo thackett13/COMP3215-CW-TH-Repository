@@ -1,0 +1,109 @@
+ Not schedulable using EDF 
+
+
+
+
+ RMS Schedular: 
+
+
+
+
+ 0: Task executing 0
+ 1: Task executing 0
+ 2: Task executing 0
+ 3: Task executing 0
+ 4: Task executing 0
+ 5: Task executing 0
+ 6: Task executing 0
+ 6 Task 0 Completed 
+ 7: Task executing 0
+ 8: Task executing 0
+ Deadline for task 1 missed
+ 9: Task executing 0
+ 10: Task executing 0
+ 11: Task executing 0
+ 12: Task executing 0
+ 13: Task executing 0
+ 13 Task 0 Completed 
+ 14: Task executing 1
+ 15: Task executing 0
+ 16: Task executing 0
+ 17: Task executing 0
+ Deadline for task 1 missed
+ 18: Task executing 0
+ 19: Task executing 0
+ 20: Task executing 0
+ 21: Task executing 0
+ 21 Task 0 Completed 
+ 22: Task executing 1
+ 23: Task executing 0
+ 24: Task executing 0
+ 25: Task executing 0
+ 26: Task executing 0
+ Deadline for task 1 missed
+ 27: Task executing 0
+ 28: Task executing 0
+ 29: Task executing 0
+ 29 Task 0 Completed 
+ 30: Task executing 1
+ 31: Task executing 0
+ 32: Task executing 0
+ 33: Task executing 0
+ 34: Task executing 0
+ 35: Task executing 0
+ Deadline for task 1 missed
+ 36: Task executing 0
+ 37: Task executing 0
+ 37 Task 0 Completed 
+ 38: Task executing 1
+ 39: Task executing 0
+ 40: Task executing 0
+ 41: Task executing 0
+ 42: Task executing 0
+ 43: Task executing 0
+ 44: Task executing 0
+ Deadline for task 1 missed
+ 45: Task executing 0
+ 45 Task 0 Completed 
+ 46: Task executing 1
+ 47: Task executing 0
+ 48: Task executing 0
+ 49: Task executing 0
+ 50: Task executing 0
+ 51: Task executing 0
+ 52: Task executing 0
+ 53: Task executing 0
+ 53 Task 0 Completed 
+ Deadline for task 1 missed
+ 54: Task executing 1
+ 55: Task executing 0
+ 56: Task executing 0
+ 57: Task executing 0
+ 58: Task executing 0
+ 59: Task executing 0
+ 60: Task executing 0
+ 61: Task executing 0
+ 61 Task 0 Completed 
+ 62: Task executing 1
+ Deadline for task 1 missed
+ 63: Task executing 0
+ 64: Task executing 0
+ 65: Task executing 0
+ 66: Task executing 0
+ 67: Task executing 0
+ 68: Task executing 0
+ 69: Task executing 0
+ 69 Task 0 Completed 
+ 70: Task executing 1
+ 71: Task executing 0
+ Deadline for task 1 missed
+ 
+
+
+ Number of missed Deadlines 8  
+
+
+ Cannot be displayed in full 
+
+
+End of file

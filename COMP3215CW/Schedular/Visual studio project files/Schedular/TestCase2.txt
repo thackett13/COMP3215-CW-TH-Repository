@@ -1,0 +1,47 @@
+ Not schedulable using EDF 
+
+
+
+
+ RMS Schedular: 
+
+
+
+
+ 0: Task executing 1
+ 0 Task 1 Completed 
+ 1: Task executing 2
+ 2: Task executing 2
+ 2 Task 2 Completed 
+ 3: Task executing 1
+ 3 Task 1 Completed 
+ 4: Task executing 2
+ 5: Task executing 2
+ 5 Task 2 Completed 
+ 6: Task executing 0
+ 7: Task executing 1
+ 7 Task 1 Completed 
+ 8: Task executing 0
+ 9: Task executing 0
+ Deadline for task 0 missed
+ 10: Task executing 0
+ 11: Task executing 1
+ 11 Task 1 Completed 
+ 12: Task executing 0
+ 13: Task executing 0
+ 14: Task executing 0
+ 15: Task executing 1
+ 15 Task 1 Completed 
+ 16: Task executing 0
+ 16 Task 0 Completed 
+ 17: Task executing 0
+ 18: Task executing 0
+ 19: Task executing 1
+ 19 Task 1 Completed 
+ 
+
+
+ Number of missed Deadlines 1  
+
+
+End of file
